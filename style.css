@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    color: #000;
+    overflow: hidden;
+    color: #c39865;
+}
+
+img {
+    background: transparent;
+}
+
+h1,
+p {
+    margin-top: 0.333rem;
+    margin-bottom: 0.333rem;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes slide-transparency {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.animate-opacity {
+    animation-name: slide-transparency;
+    animation-iteration-count: infinite;
+}
+
+.freq-5 {
+    animation-duration: 5s;
+}
+
+.freq-6 {
+    animation-duration: 6.33s;
+}
+
+.freq-7 {
+    animation-duration: 7s;
+}
+
+.freq-8 {
+    animation-duration: 8.88s;
+}
+
+.freq-9 {
+    animation-duration: 9s;
+}
+
+.freq-10 {
+    animation-duration: 10.17s;
+}
+
+.delay-2 {
+    animation-delay: 1.33s;
+}
+
+.delay-4 {
+    animation-delay: 2.11s;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #180e2e;
+    z-index: -1000;
+}
+
+.z-1,
+.z-2,
+.z-3 {
+    position: absolute;
+    width: 150vw;
+    height: 150vw;
+    left: -50vw;
+    transform-origin: center;
+}
+
+.z-1{
+    top: -50vw;
+}
+
+.z-2{
+    top: 50vw;
+}
+
+.z-3 {
+    top: 80vw;
+}
+
+.tile {
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: 512px 512px;
+}
+
+.top-left {
+    background-image: url("./img/topleft.png");
+}
+
+.top-right {
+    background-image: url("./img/topright.png");
+}
+
+.bottom-left {
+    background-image: url("./img/bottomleft.png");
+}
+
+.bottom-right {
+    background-image: url("./img/bottomright.png");
+}
+
+h1{
+    font-weight: 400;
+    max-width: 85%;
+    text-wrap: pretty;
+}
+
+#getPredict{
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    cursor: pointer;
+    color: #e6c397;
+    box-shadow: 0 0 20px 5px #b7905f;
+    background: radial-gradient(circle, rgba(255,255,255,0) 10%, rgba(253, 229, 198, 0.45) 50%, rgba(225,208,187,1) 74%, rgba(183,144,95,1) 100%);
+}
